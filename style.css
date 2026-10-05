@@ -27,19 +27,18 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .equipe p {
     margin: 0;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .equipe img {
-    width: 140px;
-    height: auto;
-    max-height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
 
