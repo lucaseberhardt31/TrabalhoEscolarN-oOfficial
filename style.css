@@ -1,11 +1,4 @@
-/* ==============================
-   CONFIGURAÇÕES GERAIS
-   ============================== */
-
-* {
-    box-sizing: border-box;
-}
-
+/* CONFIGURAÇÕES GERAIS */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,173 +8,123 @@ body {
 }
 
 
-/* ==============================
-   CABEÇALHO
-   ============================== */
-
+/* CABEÇALHO */
 header {
     background-color: #1769aa;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
 header h1 {
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
     font-size: 32px;
 }
 
 
-/* ==============================
-   ESPAÇO DA LOGO
-   ============================== */
-
-.logo-equipe {
-    width: 180px;
-    height: 100px;
-
-    margin: 0 auto;
-
+/* EQUIPE E LOGO */
+.equipe {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+}
 
-    background-color: white;
-    color: #555;
+.equipe p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-    border-radius: 8px;
+.equipe img {
+    width: 140px;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
 }
 
 
-/* ==============================
-   CONTEÚDO PRINCIPAL
-   ============================== */
-
+/* CONTEÚDO PRINCIPAL */
 main {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 30px auto;
     padding: 0 20px;
 }
 
 
-/* ==============================
-   SEÇÕES
-   ============================== */
-
+/* SEÇÕES */
 section {
     background-color: white;
-
     padding: 30px;
-
     margin-bottom: 25px;
-
-    border-radius: 8px;
-
+    border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 section h2 {
-    margin-top: 0;
-
     color: #1769aa;
-
-    border-bottom: 2px solid #ddd;
-
+    border-bottom: 2px solid #1769aa;
     padding-bottom: 8px;
+    margin-top: 0;
 }
 
-
-/* ==============================
-   TEXTOS
-   ============================== */
-
-p {
+section p {
     text-align: justify;
 }
 
-strong {
-    color: #333;
-}
 
-
-/* ==============================
-   LISTAS
-   ============================== */
-
-ul,
-ol {
-    padding-left: 30px;
-}
-
+/* LISTAS */
 li {
     margin-bottom: 8px;
 }
 
 
-/* ==============================
-   FONTES
-   ============================== */
-
-.fontes a {
+/* LINKS */
+a {
     color: #1769aa;
-
     text-decoration: none;
 }
 
-.fontes a:hover {
+a:hover {
     text-decoration: underline;
 }
 
 
-/* ==============================
-   RODAPÉ
-   ============================== */
-
+/* RODAPÉ */
 footer {
-    background-color: #333;
-
+    background-color: #222;
     color: white;
-
     text-align: center;
-
-    padding: 25px 20px;
-
-    margin-top: 40px;
+    padding: 20px;
+    margin-top: 30px;
 }
 
 footer p {
     margin: 0;
-
-    text-align: center;
-
-    font-size: 14px;
 }
 
 
-/* ==============================
-   CELULAR
-   ============================== */
-
+/* CELULAR */
 @media (max-width: 600px) {
 
     header h1 {
-        font-size: 25px;
+        font-size: 26px;
+    }
+
+    .equipe p {
+        font-size: 16px;
+    }
+
+    .equipe img {
+        width: 120px;
+        max-height: 90px;
     }
 
     main {
-        margin: 20px auto;
-        padding: 0 12px;
+        padding: 0 10px;
     }
 
     section {
         padding: 20px;
-    }
-
-    section h2 {
-        font-size: 22px;
-    }
-
-    p {
-        text-align: left;
     }
 }
